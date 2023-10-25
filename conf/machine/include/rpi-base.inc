@@ -73,6 +73,8 @@ RPI_KERNEL_DEVICETREE ?= " \
     bcm2708-rpi-cm.dtb \
     bcm2710-rpi-cm3.dtb \
     bcm2711-rpi-cm4.dtb \
+    bcm2711-rpi-cm4s.dtb \
+    bcm2712-rpi-5-b.dtb \
     "
 
 KERNEL_DEVICETREE ??= " \
