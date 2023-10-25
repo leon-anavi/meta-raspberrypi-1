@@ -33,6 +33,8 @@ KBUILD_DEFCONFIG:raspberrypi4 ?= "bcm2711_defconfig"
 KBUILD_DEFCONFIG:raspberrypi4-64 ?= "bcm2711_defconfig"
 KBUILD_DEFCONFIG:raspberrypi-armv7 ?= "bcm2711_defconfig"
 KBUILD_DEFCONFIG:raspberrypi-armv8 ?= "bcm2711_defconfig"
+KBUILD_DEFCONFIG:raspberrypi5 ?= "bcm2711_defconfig"
+KBUILD_DEFCONFIG:raspberrypi5-64 ?= "bcm2711_defconfig"
 
 LINUX_VERSION_EXTENSION ?= ""
 
