@@ -316,6 +316,11 @@ do_deploy() {
         echo "# Enable One-Wire Interface" >> $CONFIG
         echo "dtoverlay=w1-gpio" >> $CONFIG
     fi
+
+    # Reduce config.txt file size to avoid corruption and
+    # to boot successfully Raspberry Pi 5
+    sed -i '/^##/d' $CONFIG
+
 }
 
 do_deploy:append:raspberrypi3-64() {
