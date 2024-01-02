@@ -52,12 +52,15 @@ RPI_KERNEL_DEVICETREE_OVERLAYS ?= " \
     overlays/vc4-fkms-v3d-pi4.dtbo \
     overlays/vc4-kms-v3d.dtbo \
     overlays/vc4-kms-v3d-pi4.dtbo \
-    overlays/vc4-kms-v3d-pi5.dtbo \
     overlays/vc4-kms-dsi-7inch.dtbo \
     overlays/w1-gpio.dtbo \
     overlays/w1-gpio-pullup.dtbo \
     overlays/wm8960-soundcard.dtbo \
     "
+
+RPI_KERNEL_DEVICETREE_OVERLAYS:append:raspberrypi5 = " \
+    overlays/vc4-kms-v3d-pi5.dtbo \
+"
 
 RPI_KERNEL_DEVICETREE ?= " \
     bcm2708-rpi-zero.dtb \
