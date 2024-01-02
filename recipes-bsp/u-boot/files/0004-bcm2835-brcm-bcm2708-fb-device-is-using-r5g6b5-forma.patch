@@ -1,7 +1,7 @@
-From fa221470476981f30f99fb1955bdcfaccf6c0e02 Mon Sep 17 00:00:00 2001
+From 6b98592e8e60d4d0a477e5dc27b17834882f17ad Mon Sep 17 00:00:00 2001
 From: "Ivan T. Ivanov" <iivanov@suse.de>
-Date: Mon, 18 Dec 2023 23:03:38 +0200
-Subject: [PATCH 4/8] bcm2835: brcm, bcm2708-fb device is using r5g6b5 format
+Date: Mon, 18 Dec 2023 17:33:10 +0100
+Subject: [PATCH 4/7] bcm2835: brcm,bcm2708-fb device is using r5g6b5 format
 
 brcm,bcm2708-fb device provided by firmware on RPi5 uses
 16 bits per pixel. Update driver to properly handle this.

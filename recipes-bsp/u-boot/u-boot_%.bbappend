@@ -1,9 +1,12 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
-SRCREV = "43f2873fa98b1da6eb56d756315c7bd7db63db27"
+SRCREV:raspberrypi5 = "43f2873fa98b1da6eb56d756315c7bd7db63db27"
 
 SRC_URI:append:rpi = " \
      file://fw_env.config \
+"
+
+SRC_URI:append:raspberrypi5 = " \
      file://0001-rpi5-add-initial-memory-map-for-bcm2712.patch \
      file://0002-rpi5-Use-devicetree-as-alternative-way-to-read-IO-ba.patch \
      file://0003-rpi5-Use-devicetree-to-retrieve-board-revision.patch \

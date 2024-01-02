@@ -1,7 +1,7 @@
-From ebed19c27b4bfb46cd69568a726d1d5813fd68ef Mon Sep 17 00:00:00 2001
+From 840c4c26d82d417acef0b538c71c9963aea3bfc0 Mon Sep 17 00:00:00 2001
 From: "Ivan T. Ivanov" <iivanov@suse.de>
-Date: Mon, 18 Dec 2023 23:03:37 +0200
-Subject: [PATCH 3/8] rpi5: Use devicetree to retrieve board revision
+Date: Fri, 15 Dec 2023 10:17:14 +0100
+Subject: [PATCH 3/7] rpi5: Use devicetree to retrieve board revision
 
 Firmware on RPi5 return error on board revision query
 through firmware interface, but on the other hand it fills

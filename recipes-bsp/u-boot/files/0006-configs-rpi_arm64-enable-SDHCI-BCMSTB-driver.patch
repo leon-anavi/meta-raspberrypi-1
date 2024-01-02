@@ -1,7 +1,7 @@
-From ee346f56a470d0b2fba3a925dd8fa86524f02faa Mon Sep 17 00:00:00 2001
+From 2a186fc1ef8d6bde16f3c324e3b29ca552dd8569 Mon Sep 17 00:00:00 2001
 From: "Ivan T. Ivanov" <iivanov@suse.de>
-Date: Mon, 18 Dec 2023 23:03:40 +0200
-Subject: [PATCH 6/8] configs: rpi_arm64: enable SDHCI BCMSTB driver
+Date: Fri, 15 Dec 2023 09:46:30 +0100
+Subject: [PATCH 6/7] configs: rpi_arm64: enable SDHCI BCMSTB driver
 
 RPi5 have "brcm,bcm2712-sdhci" controller which is
 handled by "sdhci-bcmstb" driver, so enable it.

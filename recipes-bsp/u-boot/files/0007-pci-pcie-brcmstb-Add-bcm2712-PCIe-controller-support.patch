@@ -1,7 +1,7 @@
-From 4ccdc3c03df74869975471c6ab61d2d35d3fbb1f Mon Sep 17 00:00:00 2001
+From e8f546a2dd0e608b5225008c41af58c6c77d6dbd Mon Sep 17 00:00:00 2001
 From: "Ivan T. Ivanov" <iivanov@suse.de>
-Date: Mon, 18 Dec 2023 23:03:41 +0200
-Subject: [PATCH 7/8] pci: pcie-brcmstb: Add bcm2712 PCIe controller support
+Date: Thu, 14 Dec 2023 09:25:49 +0100
+Subject: [PATCH 7/7] pci: pcie-brcmstb: Add bcm2712 PCIe controller support
 
 PCIe controller have minor register map difference compared
 to bcm2711 variant. Handle this using device specific register

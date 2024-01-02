@@ -1,7 +1,7 @@
-From f681268041199f1b2566ecd13f9bf2a31c1d6b2a Mon Sep 17 00:00:00 2001
+From b25872adab90d6d1fb8229548cd686975f76e47c Mon Sep 17 00:00:00 2001
 From: "Ivan T. Ivanov" <iivanov@suse.de>
-Date: Mon, 18 Dec 2023 23:03:39 +0200
-Subject: [PATCH 5/8] mmc: bcmstb: Add support for bcm2712 SD controller
+Date: Fri, 15 Dec 2023 09:43:45 +0100
+Subject: [PATCH 5/7] mmc: bcmstb: Add support for bcm2712 SD controller
 
 Borrow SD quirks from vendor Linux driver.
 

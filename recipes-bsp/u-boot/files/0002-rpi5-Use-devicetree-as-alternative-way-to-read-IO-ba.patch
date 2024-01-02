@@ -1,7 +1,7 @@
-From 5baa16d6cdf8693407f4316eeb9b0fed3591849f Mon Sep 17 00:00:00 2001
+From 0493ee304a909e0e36980560a94e6bc9dac3e79a Mon Sep 17 00:00:00 2001
 From: Dmitry Malkin <dmitry@bedrocksystems.com>
-Date: Mon, 18 Dec 2023 23:03:36 +0200
-Subject: [PATCH 2/8] rpi5: Use devicetree as alternative way to read IO base
+Date: Wed, 13 Dec 2023 09:27:36 +0100
+Subject: [PATCH 2/7] rpi5: Use devicetree as alternative way to read IO base
  addresses
 
 MBOX and Watchdog on RPi5/bcm2712 has a different base IO offsets.
@@ -94,10 +94,10 @@ index 9942666720..b950560674 100644
  struct bcm2835_wdog_regs {
  	u32 unknown0[7];
 diff --git a/arch/arm/mach-bcm283x/init.c b/arch/arm/mach-bcm283x/init.c
-index af23b9711a..1c5c748484 100644
+index a26f84349b..4e9df2a88e 100644
 --- a/arch/arm/mach-bcm283x/init.c
 +++ b/arch/arm/mach-bcm283x/init.c
-@@ -151,7 +151,11 @@ static void rpi_update_mem_map(void)
+@@ -144,7 +144,11 @@ static void rpi_update_mem_map(void)
  static void rpi_update_mem_map(void) {}
  #endif
  
@@ -110,7 +110,7 @@ index af23b9711a..1c5c748484 100644
  
  int arch_cpu_init(void)
  {
-@@ -162,22 +166,45 @@ int arch_cpu_init(void)
+@@ -155,22 +159,45 @@ int arch_cpu_init(void)
  
  int mach_cpu_init(void)
  {
